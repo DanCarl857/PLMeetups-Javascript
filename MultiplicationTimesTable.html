@@ -1,0 +1,26 @@
+<!-- Code for the JAVASCRIPT PL Meetups -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplication</title>
+</head>
+<body>
+The multiplication times table written in Javascript:
+
+</body>
+<script type="text/javascript">
+	var index;
+	var counter
+
+	for(index = 1; index < 13; index++){
+		document.write("<br><br>Multiplication times table for " + index);
+		for(counter = 1; counter < 13; counter++){
+			document.write(index + " * " + counter + " = " + index*counter + "<br>");
+
+			// Also print this in the console
+			console.log(index + " * " + counter + " = " + index*counter);
+		}
+	}
+
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!-- Code for the JAVASCRIPT PL Meetups -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CheckBoard Pattern</title>
+</head>
+<body>
+Check Board Pattern written in JavaScript:<br>
+
+</body>
+<script type="text/javascript">
+	/* This program is not written in an optimized manner because it 
+	   is strictly for the purpose of demonstrating certain programming concepts
+	   using the javascript language
+	*/
+	var hash = '#';
+    var space = '_';
+
+    for (var i = 0; i < 8; i++) 
+    {        
+
+        hash += '<br>'
+
+        for (var j = 0; j < 8; j++) 
+        {
+        	if((i +j) % 2 == 0)
+        	{
+        		hash  += space
+        	} else {
+        		hash  += "#"
+        	}
+    };
+
+};
+
+document.write(hash)
+	
+</script>
+</html>
