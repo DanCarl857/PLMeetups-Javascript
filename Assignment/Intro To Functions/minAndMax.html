@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Min and Max</title>
+</head>
+<body>
+	<center>Mininum and Maximum of TWO values</center><br><br>
+	First value:<br><input type="text" name="firstNum" id="firstNum" placeholder="Enter a number"><br><br>
+	Second value:<br><input type="text" name="secondNum" id="secondNum" placeholder="Enter the another number"><br><br>
+	<button onclick="min()">Evaluate Min</button><br>
+	<p id="min"></p>
+
+	<script type="text/javascript">
+		var first;
+		var second;
+
+		function min(){
+			first = parseFloat(document.getElementById('firstNum').value);
+			second = parseFloat(document.getElementById('secondNum').value);
+
+			if(first < second){
+				document.getElementById('min').innerHTML = "The minimum value is " + first;
+			}
+			else if(second < first){
+				document.getElementById('min').innerHTML = "The minimum value is " + second;
+			}
+			else
+				document.getElementById('min').innerHTML = "Both numbers are the same";
+		}
+
+	</script>
+
+</body>
+</html>
