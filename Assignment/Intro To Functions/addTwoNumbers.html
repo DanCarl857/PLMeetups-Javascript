@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function to add 2 numbers</title>
+</head>
+<body>
+ 	<center>Sum two Numbers</center>
+ 	First Number:  <input type="text" name="firstNum" id="firstNum" value="0"><br><br>
+ 	Second Number: <input type="text" name="secondNum" id="secondNum" value="0"><br><br>
+ 	<button onclick="sum()">sum</button><br><br>
+ 	<p id= "result"></p>
+
+ 	<script type="text/javascript">
+ 		var a;
+ 		var b;
+ 		var total;
+
+ 		function sum(){
+            a = document.getElementById('firstNum').value;
+            b = document.getElementById('secondNum').value;
+            total = parseFloat(a) + parseFloat(b);
+
+           /*Inserting the result in the HTML*/
+           document.getElementById('result').innerHTML = total; 
+ 		}
+ 	</script>
+</body>
+</html>
