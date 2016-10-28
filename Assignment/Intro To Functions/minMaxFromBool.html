@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minimum and Maximum</title>
+</head>
+<body>
+	<center>Minimum and Maximum from Boolean</center>
+	First value:<br><input type="text" name="firstNum" id="firstNum" placeholder="Enter a number"><br><br>
+	Second value:<br><input type="text" name="secondNum" id="secondNum" placeholder="Enter the another number"><br><br>
+	Boolean:<br><input type="text" name="num" id="num" placeholder="Enter 1 for max and 0 for min">
+	<button onclick="minMax()">Evaluate</button><br>
+	<p id="minOrMax"></p><br><br>
+
+	<script type="text/javascript">
+		var first = parseFloat(document.getElementById('firstNum').value);
+		var second = parseFloat(document.getElementById('secondNum').value);
+
+		function min(){
+
+			if(first < second){
+				document.getElementById('minOrMax').innerHTML = "The minimum value is " + first;
+			}
+			else if(second < first){
+				document.getElementById('minOrMax').innerHTML = "The minimum value is " + second;
+			}
+			else
+				document.getElementById('minOrMax').innerHTML = "Both numbers are the same";
+		}
+
+		function max(){
+
+			if(first > second){
+				document.getElementById('minOrMax').innerHTML = "The maximum value is " + first;
+			}
+			else if(second > first){
+				document.getElementById('minOrMax').innerHTML = "The maximum value is " + second;
+			}
+			else
+				document.getElementById('minOrMax').innerHTML = "Both numbers are the same";
+
+		}
+
+		function minMax(){
+             var num = parseFloat(document.getElementById('num').value);
+
+             if(num == 1){
+             	max();
+             }
+             else if(num == 0){
+             	min();
+             }
+             else{
+             	document.getElementById('minOrMax').innerHTML = "Enter either 1 to have maximum or 0 to have minimum";
+             }
+
+		}
+
+	</script>
+</body>
+</html>
