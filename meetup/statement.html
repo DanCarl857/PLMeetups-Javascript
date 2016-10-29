@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Statements</title>
+</head>
+<body>
+<script type="text/javascript">
+	var i = 0;
+	
+	/*If statements*/
+	if(i < 0){
+		console.log("This is an if statement");
+	}
+	else if(i > 0){
+		console.log("This is an elseif statement");
+	}
+	else{
+		console.log("This is an else statement")
+	}
+
+	/*Do while statement*/
+	i = 0;
+	do{
+		console.log("This is a do while loop statement");
+		i++;
+	}while(i < 10);
+
+	/*While Statement*/
+	while(i < 10){
+		console.log("This is a while loop");
+		i++;
+	}
+
+	/*For loops*/
+	for(i = 0; i < 10; i++){
+		console.log("This is a for loop");
+    }
+
+    /*Switch Statement*/
+
+    var fruits =prompt("Enter a fruit you love");
+    fruits = fruits.toLowerCase();
+
+    switch(fruits){
+    	case "apple": console.log("You like Apple");
+    	break;
+    	case "orange": console.log("You like Oranges");
+    	break;
+    	default: console.log("You fruits is not among te most liked");
+    }
+</script>
+</body>
+</html>
