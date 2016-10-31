@@ -14,10 +14,10 @@
 
 
 	<script type="text/javascript">
-		var first = parseFloat(document.getElementById('firstNum').value);
-		var second = parseFloat(document.getElementById('secondNum').value);
 
 		function min(){
+			var first = parseFloat(document.getElementById('firstNum').value);
+			var second = parseFloat(document.getElementById('secondNum').value);
 
 			if(first < second){
 				document.getElementById('min').innerHTML = "The minimum value is " + first;
@@ -30,6 +30,8 @@
 		}
 
 		function max(){
+			var first = parseFloat(document.getElementById('firstNum').value);
+			var second = parseFloat(document.getElementById('secondNum').value);
 
 			if(first > second){
 				document.getElementById('max').innerHTML = "The maximum value is " + first;
